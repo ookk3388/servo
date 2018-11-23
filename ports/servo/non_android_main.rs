@@ -45,7 +45,7 @@ fn install_crash_handler() {
     use sig::ffi::Sig;
     use std::thread;
 
-    fn handler(_sig: i32) {
+    extern "C" fn handler(sig: i32) {
         let name = thread::current()
             .name()
             .map(|n| format!(" for thread \"{}\"", n))

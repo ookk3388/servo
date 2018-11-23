@@ -52,7 +52,7 @@ libc = "0.2"
 log = "0.4"
 tinyfiledialogs = "3.0"
 winit = {version = "0.18", features = ["icon_loading"]}
-sig = "0.1"
+sig = "1.0"
 
 [target.'cfg(any(target_os = "linux", target_os = "macos"))'.dependencies]
 osmesa-sys = "0.1.2"
